@@ -1,0 +1,98 @@
+body{
+  overflow-y:hidden;
+  overflow-x:hidden;
+}
+.ilya{
+  display: block;
+  text-align: center;
+}
+.ilya img{
+  border: 1px solid;
+  animation-name: anim;
+  animation-duration: 10s;
+  animation-fill-mode: forwards ;
+}
+@keyframes anim{
+  0%{
+    width: 10%;
+    height: 10vh;
+  }
+  100%{
+    width: 100%;
+    height: 100vh;
+  }
+}
+#pocik{
+  opacity: 0;
+  z-index: 100;
+  font-size: 56px;
+  animation-name: anim2;
+  animation-duration: 5s;
+  animation-delay: 7s;
+  animation-fill-mode: forwards;
+  transition: 0.3s;
+}
+#pocik:hover{
+  color: red;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+@keyframes anim2{
+  0%{
+    opacity: 0;
+    position: absolute;
+    bottom: -1%;
+    left: 36%;
+  }
+  100%{
+    opacity: 100;
+    position: absolute;
+    bottom: 15%;
+    left: 36%;
+  }
+}
+.haram img{
+  opacity: 0;
+  width: 15%;
+  animation-name: haram1;
+  animation-duration: 4s;
+  animation-delay: 13s;
+  animation-fill-mode: forwards;
+}
+.haram1 img{
+  opacity: 0;
+  width: 27%;
+  animation-name: haram2;
+  animation-duration: 4s;
+  animation-delay: 13s;
+  animation-fill-mode: forwards;
+}
+@keyframes haram1{
+  0%{
+    opacity: 100;
+    position: absolute;
+    top: 5%;
+    left: -1%;
+  }
+  100%{
+    position: absolute;
+    top: 5%;
+    left: 15%;
+    opacity: 100;
+  }
+}
+
+@keyframes haram2 {
+  0%{
+    opacity: 100;
+    position: absolute;
+    top: 10%;
+    right: -1%;
+  }
+  100%{
+    position: absolute;
+    top: 10%;
+    right: 15%;
+    opacity: 100;
+  }
+}
