@@ -24,7 +24,7 @@ body{
 #pocik{
   opacity: 0;
   z-index: 100;
-  font-size: 56px;
+  font-size: 24px;
   animation-name: anim2;
   animation-duration: 5s;
   animation-delay: 7s;
